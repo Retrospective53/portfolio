@@ -43,7 +43,7 @@ const Nabvar = () => {
               </li>
             </Link>
           </ul>
-          <div onClick={handleNav} className="md:hidden">
+          <div onClick={handleNav} className="md:hidden hover:cursor-pointer">
             <AiOutlineMenu size={25} />
           </div>
         </div>
