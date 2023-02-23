@@ -1,5 +1,11 @@
-import '@/styles/globals.css'
+import Nabvar from "@/components/Navbar";
+import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Nabvar />
+      <Component {...pageProps} />
+    </>
+  );
 }
