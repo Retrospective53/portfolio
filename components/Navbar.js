@@ -14,7 +14,7 @@ const Nabvar = () => {
   const router = useRouter();
 
   useEffect(() => {
-    if (router.asPath === "/property") {
+    if (router.asPath === "/blog" || router.asPath === "/dungeon") {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");
     } else {
@@ -161,12 +161,24 @@ const Nabvar = () => {
                   Let's connect
                 </p>
                 <div className="flex items-center justify-between w-full sm:w-[80%]">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaLinkedinIn />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaGithub />
-                  </div>
+                  <a
+                    href="https://www.linkedin.com/in/harry-pamungkas-9aa6801a5/"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                      <FaLinkedinIn />
+                    </div>
+                  </a>
+                  <a
+                    href="https://github.com/Retrospective53"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                      <FaGithub />
+                    </div>
+                  </a>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <AiOutlineMail />
                   </div>
